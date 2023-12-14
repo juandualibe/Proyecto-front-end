@@ -58,7 +58,7 @@ createApp({
       fetch(this.url, options)
         .then(function () {
           alert("Registro grabado");
-          window.location.href = "./audiogrove.html";
+          window.location.href = "./audiogroove.html";
         })
         .catch((err) => {
           console.error(err);
