@@ -1,0 +1,109 @@
+/*Media query para pantallas pequeñas con resolución de 365px x 667 */
+@media (max-width: 667px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    nav {
+        width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas*/ 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .action_btn {
+        display: none;
+    }
+    .menu-icon {
+        margin-right: 15%;
+        font-size: 1em;
+    }
+    .logoiconn {
+        margin-left: 0;
+    }
+    
+    .searchbar-container{
+        display: none;
+    }
+    .footer {
+        position: fixed;
+        width: 100%;
+        margin-top: 30vh;
+        bottom: 0;
+    }
+    .footer-terms {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin-top: 30vh;
+        bottom: 0;
+    }
+    ul.menu {
+        left: 77%; /* Ajustar el valor para centrar el menú horizontalmente */
+        width: 12%;
+    }
+    .terms-and-conditions {
+        width: 100vw;
+        height: 667px;
+        background: rgb(54, 15, 75);
+        background: linear-gradient(90deg, rgba(54, 15, 75, 1) 0%, rgba(75, 24, 113, 1) 50%, rgba(117, 26, 164, 1) 100%);
+        padding: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 15px;
+        color: white;
+        box-shadow: 12px 20px 37px #290038;
+        overflow: auto;
+        left: 0;
+    }
+    ul li a {
+        font-size: 0.5rem;
+    }
+
+}
+
+
+/* Media query para pantallas con ancho máximo de 1080px */
+@media (max-width: 1080px) {
+    .lupa {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        border: none;
+        position: relative;
+        bottom: 15px;
+        left: 91%; /* Ajustar la posición horizontal */
+        background: rgb(134, 66, 213);
+        background: linear-gradient(90deg, rgba(134, 66, 213, 1) 0%, rgba(255, 86, 246, 1) 100%);
+        transform: scale(1.25); /* Corregir la propiedad "scale" a "transform" */
+    }
+    .searchbar {
+        left: 48%;
+        width: 100%; /* Ajustar el ancho al 100% en pantallas pequeñas */
+    }
+    .footer {
+        position: absolute;
+        margin-top: 70vh;
+        bottom: 0;
+    }
+    
+    .action_btn {
+        display: none;
+    }
+}
+
+/*Media query para pantallas pequeñas con resolución de 820px x 1180 */
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    .searchbar-container{
+        display: none;
+    }
+    ul.menu {
+        left: 78%; /* Ajustar el valor para centrar el menú horizontalmente */
+        width: 8%;
+        margin-top: 1%;
+    }
+}
+

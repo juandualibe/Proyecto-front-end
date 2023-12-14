@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>VortexSound</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/secciones.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon/galaxy.ico">
+</head>
+
+<body>
+    <nav class="logo">
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="home.html">
+                        <img class="logoicon" src="favicon/galaxy.ico">
+                    </a></li>
+                <li><a href="home.html" class="logotext">VortexSound</a></li>
+        </div>
+
+
+        <form action="">
+            <li><input type="text" class="searchbar" name="search" id="srch" placeholder="Search for a song, artist..."
+                    autocomplete="off"></li>
+            <button type="submit" class="lupa"><i class='bx bx-search-alt-2'></i></button>
+        </form>
+
+        <a href="usuario_nuevo.html" class="action_btn">Get Started</a>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        <ul class="menu" style="top: 90px;">
+            <li><a href="login.html" style="text-decoration: none; color:white">Login</a></li>
+            <li><a href="usuario_nuevo.html" style="text-decoration: none; color:white">Register</a></li>
+            <li><a href="terms.html" style="text-decoration: none; color:white">Terms</a></li>
+            <li><a href="usuarios.html" style="text-decoration: none; color:white">Admin</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img class="logoiconn" src="favicon/galaxy.ico">
+    </header>
+    <div id="app" class="container">
+        <h1 style="color: white;">Usuarios</h1>
+        <br>
+        <a class="btn btn-primary" href="usuario_nuevo.html">Nuevo</a>
+        <br><br>
+
+        <div v-if="error">
+            <p>Lo sentimos, ha ocurrido un error.</p>
+        </div>
+        <div v-else>
+            <section v-if="cargando">
+                <div class="spinner-border"></div>
+                <p>Cargando...</p>
+            </section>
+            <section v-else>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Firstname</th>
+                                <th scope="col">Lastname</th>
+                                <th scope="col">Birthdate</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="" v-for="usuario in usuarios">
+                                <td scope="row">{{usuario.id}}</td>
+                                <td>{{usuario.username}}</td>
+                                <td>{{usuario.firstname}}</td>
+                                <td>{{usuario.lastname}}</td>
+                                <td>{{usuario.birthdate}}</td>
+                                <td>{{usuario.email}}</td>
+                                <td>
+                                    <a class="btn btn-primary" :href="'usuario_update.html?id=' + usuario.id">Editar</a>
+                                    <button type="button" class="btn btn-danger"
+                                        v-on:click="eliminar(usuario.id)">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy;VortexSound 2023. Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/usuarios.js"></script>
+    <script src="./js/menu.js"></script>       
+</body>
+
+</html>
+
+
+

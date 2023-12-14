@@ -1,0 +1,570 @@
+/* Valores globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+}
+
+
+
+
+/* Valores de todos los .html*/
+body { 
+    background: url(../img/5.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: zoominandout 16s infinite alternate;
+}
+
+.home {
+    width: 100%;
+    background: #1b012a;
+    padding: 30px;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 10x;
+    color: white;
+    box-shadow: 12px 20px 37px #290038;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* Animacion del fondo */
+@keyframes zoominandout {
+    from {
+      background-size: 110% 110%;
+    }
+    to {
+      background-size: 100% 100%;
+    }
+}
+
+
+
+
+/*Valor del body, poco que agregar*/
+body{
+    margin: 0;
+    padding: 0;
+    max-height: 50vh;
+    max-width: 100vw;
+}
+
+/* Valores del <nav> que se encuentra en todas las paginas, revisar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow: auto;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    background-color: #3b005d;
+    background: rgb(7,0,15);
+    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
+    color: #ffffff;
+    opacity: 90%;
+}
+
+
+
+
+
+
+
+
+/*Formulario de registro y login*/
+.form-register{
+    width: 400px;
+    background: rgb(54,15,75);
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%);
+    padding: 30px;
+    position: relative;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 12px 20px 37px #290038;    
+}
+
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.form-register .link{
+    color: rgb(218, 98, 255);
+    font-weight: bold;
+
+}
+.form-register p {
+    font-size: 18px;
+    text-align: center;
+}
+.form-register .botons {
+    width: 100%;
+    background: #5f036f;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+h4{
+    text-align: center;
+    color: black;
+}
+.controls{
+    width: 100%;
+    background: #060008;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #9d0086;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.form-register a:hover {
+    color: #ff78f8;
+    text-decoration: underline;
+    font-size: 17px;
+}
+.form-register .botons {
+    width: 100%;
+    background: #5f036f;
+    border: solid #741183;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 0px 6mm #280540;
+
+}
+.form-register .botons:hover {
+    width: 100%;
+    background: #460252;
+    border: solid #741183;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 0px 6mm #861dcc;
+    scale: 1.05;
+    transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/*Boton terminos y condiciones*/
+#accept-terms {
+    left: 84%;   
+    top: 83.5%; 
+}
+/* Parrafo de terminos y condiciones en el registro*/
+#terms {
+    padding-right: 50px;
+}
+header{
+    margin: 20px;
+    padding-top: 30px;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#f152ff, #240347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4{
+    text-align: center;
+    color: white;
+}
+
+/* Valor general para todos los <a> de los html */
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+/*Borde del texto Create an Account*/
+.textborder{
+    background: rgb(57,18,105);
+    background: linear-gradient(90deg, rgba(57,18,105,1) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    bottom: 4px;
+    display: flex;
+    left: 16%;
+    font-size: 0.8rem;
+    width: 230px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 0px 6mm #280540;
+ 
+}
+
+
+
+
+
+
+
+
+/*Botón del login "remember me"*/
+.check{
+    position: relative;
+    bottom: 17px;
+    left: 290px;
+    transform: translate(-50%, -50%);
+}
+input[type="checkbox"]
+{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    appearance: none;
+    background: #31013f;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgb(22, 2, 31);
+    
+}
+input:checked[type="checkbox"]
+{
+    background: #d25ae1; 
+    box-shadow: inset 0 0 10px rgb(33, 0, 43)
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    top: 1.5px;
+    left: 2.5px;
+    background: rgb(23, 1, 30);
+    transform: scale(1.1);
+    transition: .5s; 
+    box-shadow: 0px 0px 6mm #e900d2;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 20px;
+}
+
+.footer { /*Este es el footer acá modifiqué lo siguiente:*/
+    
+    position: relative;    
+    width: 100%;    
+    background-color: #3b005d;
+    color: white;
+    padding: 2vh;
+    text-align: center; 
+    margin-top: 50vh;  
+    bottom: 0;
+}
+/*Footer para el registro*/
+.footer-register {
+    position: relative;
+    width: 100%;
+    background-color: #3b005d;
+    color: white;
+    padding: 2vh;
+    text-align: center; 
+    margin-top: 5vh;  
+    bottom: 0;
+
+}
+
+
+/*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
+.audio {
+    display: block;
+    position: absolute;
+    margin-top: 55vh;
+    top: 28vh;
+    width: 100%;
+    bottom: 0;
+    
+    
+    
+}
+
+/*CON ESTO LE INDICO EL ANCHO Y LA ALTURA AL REPRODUCTOR TOTAL*/
+#miAudio {
+    width: 100%;
+    height: 4vh;
+}
+/* Cambia el color de fondo de la barra de reproducción */
+#miAudio::-webkit-media-controls-panel {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/* Cambia el color del tiempo de reproducción actual */
+#miAudio::-webkit-media-controls-current-time-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/* Cambia el color de la duración total del audio */
+#miAudio::-webkit-media-controls-time-remaining-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/*BOTONES DE REPRODUCCIÓN*/
+#play-buttons {
+    margin-left: 1%; /*le dejo un poco de margen izquierdo*/
+}
+
+/*AGRUPAMIENTO PARA SEPARARLOS UN POCO A LOS BOTONES*/
+#temaAnterior, #temaSiguiente {
+    margin-right: 5%;
+
+}
+
+/*Estilos para los botoncitos*/
+
+#temaAnterior, #temaSiguiente {
+    background:  rgba(75,24,113,1) 50%;
+    color: violet; /*Color de las letras para los mismos*/
+    height: 4vh; /*un poco de altura para la caja del boton*/
+    width: auto; /*un poco de largo*/
+    border-radius: 5px; /*para hacerlo menos cuadrado*/
+    
+    
+    
+}
+
+/*UN POCO DE EFECTO PARA LOS FOTONES*/
+#temaAnterior:active {
+    transform: scale(0.9); /*Se achica un 10% de su tamaño, idem que el boton siguiente. Todo en una transición de 0.2 segundos*/
+    transition: 0.2s;
+}
+#temaSiguiente:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+/*ESTILO DEL PARRAFO QUE ESTA EN EL HEADER*/
+#welcome {
+    font-size: 18px;    
+}
+
+
+
+
+
+
+
+
+/* Valor general para todos los <a> de los html */
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+/*Borde del texto Create an Account*/
+.textborder{
+    background: rgb(57,18,105);
+    background: linear-gradient(90deg, rgba(57,18,105,1) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    bottom: 4px;
+    display: flex;
+    left: 16%;
+    font-size: 0.8rem;
+    width: 230px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 0px 6mm #280540;
+ 
+}
+
+
+
+
+
+
+
+
+/*Botón del login "remember me"*/
+.check{
+    position: relative;
+    bottom: 17px;
+    left: 290px;
+    transform: translate(-50%, -50%);
+}
+input[type="checkbox"]
+{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    appearance: none;
+    background: #31013f;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgb(22, 2, 31);
+}
+input:checked[type="checkbox"]
+{
+    background: #d25ae1; 
+    box-shadow: inset 0 0 10px rgb(33, 0, 43)
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    top: 1.5px;
+    left: 2.5px;
+    background: rgb(23, 1, 30);
+    transform: scale(1.1);
+    transition: .5s; 
+    box-shadow: 0px 0px 6mm #e900d2;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 20px;
+}
+
+.footer { /*Este es el footer acá modifiqué lo siguiente:*/
+    
+    position: absolute;    
+    width: 100%;    
+    background-color: #3b005d;
+    color: white;
+    padding: 2vh;
+    text-align: center;
+    margin-bottom: 0.2vh;
+    
+    
+    
+    
+    
+    
+    
+}
+/*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
+.audio {
+    display: block;
+    position: absolute;
+    margin-top: 55vh;
+    top: 28vh;
+    width: 100%;
+    bottom: 0;
+    
+    
+    
+}
+
+/*CON ESTO LE INDICO EL ANCHO Y LA ALTURA AL REPRODUCTOR TOTAL*/
+#miAudio {
+    width: 100%;
+    height: 4vh;
+}
+/* Cambia el color de fondo de la barra de reproducción */
+#miAudio::-webkit-media-controls-panel {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/* Cambia el color del tiempo de reproducción actual */
+#miAudio::-webkit-media-controls-current-time-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/* Cambia el color de la duración total del audio */
+#miAudio::-webkit-media-controls-time-remaining-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/*BOTONES DE REPRODUCCIÓN*/
+#play-buttons {
+    margin-left: 1%; /*le dejo un poco de margen izquierdo*/
+}
+
+/*AGRUPAMIENTO PARA SEPARARLOS UN POCO A LOS BOTONES*/
+#temaAnterior, #temaSiguiente {
+    margin-right: 5%;
+}
+
+/*Estilos para los botoncitos*/
+
+#temaAnterior, #temaSiguiente {
+    background:  rgba(75,24,113,1) 50%;
+    color: violet; /*Color de las letras para los mismos*/
+    height: 4vh; /*un poco de altura para la caja del boton*/
+    width: auto; /*un poco de largo*/
+    border-radius: 5px; /*para hacerlo menos cuadrado*/
+    
+    
+    
+}
+
+/*UN POCO DE EFECTO PARA LOS FOTONES*/
+#temaAnterior:active {
+    transform: scale(0.9); /*Se achica un 10% de su tamaño, idem que el boton siguiente. Todo en una transición de 0.2 segundos*/
+    transition: 0.2s;
+}
+#temaSiguiente:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+/*ESTILO DEL PARRAFO QUE ESTA EN EL HEADER*/
+#welcome {
+    font-size: 18px;    
+}
+
+/*TABLA DE ADMIN*/
+
+.table {
+    background-color: white;
+}

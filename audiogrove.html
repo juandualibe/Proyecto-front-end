@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/secciones.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon/galaxy.ico">
+    <link rel="stylesheet" href="css/audiogrove.css">
+    <title>VortexSound</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="home.html">
+                        <div class="logo"><img class="logoicon" src="favicon/galaxy.ico">
+                    </a></li>
+                <li><a href="home.html" class="logotext">VortexSound</a></li>
+        </div>
+
+        <div class="searchbar-container">
+            <form action="">
+                <li><input type="text" class="searchbar" name="search" id="srch"
+                        placeholder="Search for a song, artist..." autocomplete="off"></li>
+                <button type="submit" class="lupa"><i class='bx bx-search-alt-2'></i></button>
+            </form>
+        </div>
+        <a href="usuario_nuevo.html" class="action_btn">Get Started</a>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        <ul class="menu">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="usuario_nuevo.html">Register</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="usuarios.html">Admin</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img class="logoiconn" src="favicon/galaxy.ico">
+    </header>
+    <script>
+        
+    </script>
+    <section class="main-content">
+        
+        <div class="container-name-sounds">
+            <h1 class="title-playlist">Sounds</h1>
+            <div class="container-card-sounds">
+            </div>
+        </div>
+        
+    </section>
+    <section class="comments-section">
+        <form id="comment-form">
+            <h2>Deja un Comentario</h2>
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username">
+            
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" rows="4"></textarea><br>
+            
+            <button type="button" onclick="postComment()">Publicar Comentario</button>
+        </form>
+        
+        <div id="comments-container">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+    </section>
+    
+    <footer id="footer-audiogrove">
+        <p>&copy;VortexSound 2023. Todos los derechos reservados</p>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/audiogrove.js"></script>
+    <script src="js/comments.js"></script>
+    
+    
+</body>
+
+</html>

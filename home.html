@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/secciones.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon/galaxy.ico">
+    <title>VortexSound</title>
+</head>
+
+<body>
+    <nav class="logo">
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="home.html">
+                        <img class="logoicon" src="favicon/galaxy.ico">
+                    </a></li>
+                <li><a href="home.html" class="logotext">VortexSound</a></li>
+        </div>
+
+        
+            <form action="">
+                <li><input type="text" class="searchbar" name="search" id="srch" placeholder="Search for a song, artist..."
+                        autocomplete="off"></li>
+                <button type="submit" class="lupa"><i class='bx bx-search-alt-2'></i></button>
+            </form>
+       
+            <a href="usuario_nuevo.html" class="action_btn">Get Started</a>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        <ul class="menu">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="usuario_nuevo.html">Register</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="usuarios.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img class="logoiconn" src="favicon/galaxy.ico">
+    </header>
+
+    <div class="slider">
+        <div class="item">
+
+            <section id="section1">
+
+                <h3 id="about">Acerca de VortexSound</h3>
+                <p>Bienvenido a VortexSound, el epicentro de la música creativa y la inspiración global. Somos una
+                    plataforma dedicada a la comunidad de artistas, donde la música se convierte en un puente que une a
+                    talentos emergentes con oyentes apasionados en todo el mundo.</p>
+
+            </section>
+        </div>
+        <div class="item">
+            <section id="section2">
+
+                <h3 id="mission">Nuestra Misión</h3>
+                <p>Nuestra misión en VortexSound es apoyar y nutrir el talento musical en todas sus formas. Defendemos
+                    los
+                    derechos de autor y ofrecemos una plataforma segura y ética para que los artistas compartan su
+                    música
+                    sin temor a la piratería. Creemos en la música como un medio para inspirar, emocionar y crear un
+                    cambio
+                    positivo en el mundo.
+
+                    Únete a nosotros en VortexSound y forma parte de una comunidad apasionada que celebra la música en
+                    su
+                    forma más pura. Descubre nuevas canciones, conéctate con artistas talentosos y déjate llevar por la
+                    magia de la música en constante evolución.
+
+                    ¡Sé parte de la revolución musical en VortexSound!.</p>
+
+            </section>
+        </div>
+        <div class="item">
+            <section id="section3">
+
+                <h3 id="comunity">Una Comunidad de Músicos Globales</h3>
+                <p>En VortexSound, creemos en el poder de la música para unir a personas de todas partes. Cada artista,
+                    ya
+                    sea
+                    un compositor de canciones, un productor o un intérprete, es una parte valiosa de nuestra comunidad.
+                    Nuestra
+                    plataforma es un lugar donde los artistas pueden compartir sus historias a través de la música y
+                    donde
+                    los
+                    oyentes pueden experimentar el mundo a través de sus oídos.</p>
+
+
+            </section>
+        </div>
+        <div class="item">
+            <section id="section4">
+
+                <h3 id="descubre">Descubre, Conéctate y Colabora</h3>
+                <p>Ya sea que estés buscando la melodía perfecta para inspirarte o desees compartir tu última creación
+                    con
+                    el
+                    mundo, VortexSound es el lugar ideal para conectarte con otros artistas y oyentes ávidos. Explora un
+                    universo de sonidos, géneros y estilos musicales diversos, y siéntete libre de conectarte con tus
+                    artistas
+                    favoritos para discutir colaboraciones y proyectos emocionantes.</p>
+
+            </section>
+        </div>
+        <div class="item">
+            <section id="section5">
+
+                <h3 id="plataform">Una Plataforma para Artistas por Artistas</h3>
+                <p>En VortexSound, creemos que la música es una forma de expresión universal que trasciende fronteras y
+                    conecta almas. Nuestra plataforma ha sido diseñada pensando en artistas, tanto aquellos que ya han
+                    dejado su huella en la industria como aquellos que recién están comenzando su viaje creativo.
+                    Brindamos
+                    a los músicos un espacio dedicado para compartir sus obras maestras, sin preocupaciones por la
+                    descarga
+                    no autorizada.</p>
+
+            </section>
+        </div>
+    </div>
+    <button id="prev">Prev. Section</button> <!--Los botones del slide, vamos a tener que cambiar los nombres para ponerlos en Inglés-->
+    <button id="next">Next Section</button>
+    </div>
+
+
+    <div class="audio">
+        <audio controls muted id="miAudio" controlsList="nodownload"> <!--controlsList="nodownload" borra la opción de descarga-->
+            <source type="audio/mpeg" id="misAudios">
+            Tu navegador no puede reproducir este audio
+        </audio>
+        <!--Botones para pasar de un tema a otro, hay que ponerlo en inglés-->
+        <div id="play-buttons">
+            <button id="temaAnterior">Prev. Track</button>
+            <button id="temaSiguiente">Next Track</button>
+        </div>
+    </div>
+    <script src="js/carousel.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/audio.js"></script> <!--Esta es una de las maneras en las que vincular cada js a un html-->
+    <footer class="footer">
+        <p>&copy;VortexSound 2023. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
